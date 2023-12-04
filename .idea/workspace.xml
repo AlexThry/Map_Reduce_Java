@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f62e923-ecc0-4d7c-afa2-90b9dfb11943" name="Changes" comment="1st commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MapperThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PreProcesser.java" afterDir="false" />
+    <list default="true" id="1f62e923-ecc0-4d7c-afa2-90b9dfb11943" name="Changes" comment="Mappers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -58,7 +54,7 @@
       <updated>1701693385441</updated>
       <workItem from="1701693386554" duration="1281000" />
       <workItem from="1701695148657" duration="102000" />
-      <workItem from="1701695890729" duration="9290000" />
+      <workItem from="1701695890729" duration="10368000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit">
       <created>1701693432528</created>
@@ -74,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701693601654</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Mappers">
+      <created>1701705415244</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701705415244</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +96,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1st commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="1st commit" />
+    <MESSAGE value="Mappers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mappers" />
   </component>
 </project>

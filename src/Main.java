@@ -30,5 +30,11 @@ public class Main {
         preProcesser.mergeFiles();
         preProcesser.splitString();
         preProcesser.distributeChunks();
+
+        // Il faut créer les récucers avant les mappers.
+        // trouver une fonction de hash -> Sha64
+        // nombre de possibilités de hash divisées par le nombre de reducer
+        // En créant les mappers, on leur donne la liste des reducers
+        // quand les reducers ont leur mots, on multithread
     }
 }
