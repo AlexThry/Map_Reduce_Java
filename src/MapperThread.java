@@ -1,9 +1,8 @@
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class MapperThread extends Thread {
-    private Mapper mapper;
+    private final Mapper mapper;
     private ArrayList<String> result;
 
     public MapperThread(Mapper mapper) {

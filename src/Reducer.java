@@ -8,7 +8,7 @@ public class Reducer {
     public HashMap<String, Integer> process() {
         for (String word: this.map) {
             if (wordCount.containsKey(word)) {
-                Integer count = wordCount.get(word);
+                int count = wordCount.get(word);
                 wordCount.put(word, count + 1);
             } else {
                 wordCount.put(word, 1);

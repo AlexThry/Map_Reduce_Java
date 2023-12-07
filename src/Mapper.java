@@ -1,18 +1,13 @@
-import java.math.BigInteger;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.security.*;
 
 public class Mapper {
 
-    private ArrayList<String> map = new ArrayList<>();
+    private final ArrayList<String> map = new ArrayList<>();
     ArrayList<String> chunk = new ArrayList<>();
-    ArrayList<ArrayList<String>> shuffled = new ArrayList<>();
     ArrayList<Reducer> reducers;
 
-    public Mapper() {}
     public Mapper(ArrayList<Reducer> reducers) {
         this.reducers = reducers;
     }

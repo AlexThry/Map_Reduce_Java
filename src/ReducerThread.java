@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 public class ReducerThread extends Thread {
-    private Reducer reducer;
+    private final Reducer reducer;
     private HashMap<String, Integer> result;
 
     public ReducerThread(Reducer reducer) {

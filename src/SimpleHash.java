@@ -1,7 +1,7 @@
 public class SimpleHash {
     private static volatile SimpleHash instance;
 
-    private SimpleHash() {};
+    private SimpleHash() {}
 
     public static SimpleHash getInstance() {
         if (instance == null) {
