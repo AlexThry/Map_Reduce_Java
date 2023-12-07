@@ -1,35 +1,36 @@
+import java.math.BigInteger;
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.security.*;
 
 public class Mapper {
- 
-    private HashMap<String, Integer> map = new HashMap<>();
+
+    private ArrayList<String> map = new ArrayList<>();
     ArrayList<String> chunk = new ArrayList<>();
+    ArrayList<ArrayList<String>> shuffled = new ArrayList<>();
+    ArrayList<Reducer> reducers;
 
     public Mapper() {}
-
-    public Mapper(ArrayList<String> chunk) {
-        this.chunk = chunk;
+    public Mapper(ArrayList<Reducer> reducers) {
+        this.reducers = reducers;
     }
 
-    public void process() {
+    public ArrayList<String> process() throws NoSuchAlgorithmException {
         for (String line: chunk) {
-            ArrayList<String> words = new ArrayList<>(List.of(line.split("[ -;,./!?\"\t\n\r()'{}]+")));
+            ArrayList<String> words = new ArrayList<>(List.of(line.split("[ -;,./!?\"\t\n\r()'{}”|“’—^>=%*»$€@#§°_…]+")));
             for (String word: words) {
-                word = word.toLowerCase();
-                if (map.containsKey(word) && word != "" && word.length() != 0) {
-                    Integer newValue = map.get(word) + 1;
-                    map.put(word, newValue);
-                } else if (!map.containsKey(word) && word != "" && word.length() != 0) {
-                    map.put(word, 1);
+                if (word.length() > 1) {
+                    word = word.toLowerCase();
+                    map.add(word);
                 }
             }
         }
-        System.out.println(map);
+        return map;
     }
 
-    public HashMap<String, Integer> getMap() {
+    public ArrayList<String> getMap() {
         return map;
     }
 

@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f62e923-ecc0-4d7c-afa2-90b9dfb11943" name="Changes" comment="Mappers">
+    <list default="true" id="1f62e923-ecc0-4d7c-afa2-90b9dfb11943" name="Changes" comment="Ajout commentaires">
+      <change afterPath="$PROJECT_DIR$/src/Processer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Reducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ReducerThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SimpleHash.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MapperThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MapperThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PreProcesser.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +48,9 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
@@ -54,7 +65,8 @@
       <updated>1701693385441</updated>
       <workItem from="1701693386554" duration="1281000" />
       <workItem from="1701695148657" duration="102000" />
-      <workItem from="1701695890729" duration="10368000" />
+      <workItem from="1701695890729" duration="10761000" />
+      <workItem from="1701765268684" duration="18265000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit">
       <created>1701693432528</created>
@@ -77,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701705415244</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Ajout commentaires">
+      <created>1701706683882</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701706683882</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +116,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1st commit" />
     <MESSAGE value="Mappers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mappers" />
+    <MESSAGE value="Ajout commentaires" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout commentaires" />
   </component>
 </project>
