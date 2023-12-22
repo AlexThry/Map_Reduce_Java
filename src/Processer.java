@@ -95,6 +95,7 @@ public class Processer {
             thread.join();
             this.fullMap.addAll(thread.getResult());
         }
+        System.out.println("Mapping finished");
     }
 
     public void shuffle() {
