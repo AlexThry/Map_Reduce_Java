@@ -9,8 +9,6 @@ public class Processer {
     int mergedSize = 0;
     ArrayList<Mapper> mappers = new ArrayList<>();
     ArrayList<Reducer> reducers = new ArrayList<>();
-    ArrayList<String> fullMap = new ArrayList<>();
-    ArrayList<ArrayList<String>> reducerMaps = new ArrayList<>();
     HashMap<String, Integer> fullHashMap = new HashMap<>();
 
     public Processer(String filesPath, int nbMappers, int nbReducers) {
@@ -93,35 +91,14 @@ public class Processer {
         }
         for (MapperThread thread: threads) {
             thread.join();
-            this.fullMap.addAll(thread.getResult());
         }
         System.out.println("Mapping finished");
     }
 
-    public void shuffle() {
-        for (int i = 0; i < this.reducers.size(); i++) {
-            this.reducerMaps.add(new ArrayList<>());
-        }
-        SimpleHash simpleHash = SimpleHash.getInstance();
-        int subDiv = 128 / this.reducers.size();
-        for (int i = 0; i < this.reducers.size(); i++) {
-            for (String word : this.fullMap) {
-                int hash = simpleHash.execute(word);
-                if ((i == 0 && hash >= 0 && hash < (i + 1) * subDiv) || (i != 0 && hash > i * subDiv && hash < (i + 1) * subDiv)) {
-                    this.reducerMaps.get(i).add(word);
-                }
-            }
-        }
-    }
-
     public void executeReducer() throws InterruptedException {
         ArrayList<ReducerThread> threads = new ArrayList<>();
-        for (int i = 0; i < reducers.size(); i++) {
-            Reducer reducer = reducers.get(i);
-            ArrayList<String> reducerMap = reducerMaps.get(i);
-            reducer.setMap(reducerMap);
+        for (Reducer reducer : reducers) {
             threads.add(new ReducerThread(reducer));
-
         }
         for (ReducerThread thread: threads) {
             thread.start();

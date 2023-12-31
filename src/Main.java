@@ -13,7 +13,6 @@ public class Main {
         processer.mergeFiles();
         processer.splitString();
         processer.executeMappers();
-        processer.shuffle();
         processer.executeReducer();
         HashMap<String, Integer> results = processer.getFullHashMap();
         System.out.println(results);

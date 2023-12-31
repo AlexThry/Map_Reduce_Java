@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Reducer {
-    ArrayList<String> map = new ArrayList<>();
+    final ArrayList<String> map = new ArrayList<>();
     HashMap<String, Integer> wordCount = new HashMap<>();
 
     public HashMap<String, Integer> process() {
@@ -17,7 +17,9 @@ public class Reducer {
         return wordCount;
     }
 
-    public void setMap(ArrayList<String> map) {
-        this.map = map;
+    public void addMap(ArrayList<String> map) {
+        synchronized (this.map) {
+            this.map.addAll(map);
+        }
     }
 }
