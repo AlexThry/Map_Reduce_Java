@@ -7,6 +7,8 @@ public class Main {
 
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException, InterruptedException {
 
+
+        long debut = System.currentTimeMillis();
         Processer processer = new Processer("src/Files", 10, 2);
 
         System.out.println(processer.mergedSize);
@@ -15,7 +17,9 @@ public class Main {
         processer.executeMappers();
         processer.executeReducer();
         HashMap<String, Integer> results = processer.getFullHashMap();
-        System.out.println(results);
 
+        long fin = System.currentTimeMillis();
+        long tempsEcoule = (fin - debut);
+        System.out.println("Temps de calcul : " + tempsEcoule + " ms");
     }
 }

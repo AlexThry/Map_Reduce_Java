@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f62e923-ecc0-4d7c-afa2-90b9dfb11943" name="Changes" comment="mappers directly sends theirs results to reducers without passing throught processer">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MapperThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MapperThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Processer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Processer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reducer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +61,7 @@
       <workItem from="1701765268684" duration="19498000" />
       <workItem from="1701989625285" duration="710000" />
       <workItem from="1703232438151" duration="4083000" />
-      <workItem from="1704036188246" duration="1395000" />
+      <workItem from="1704036188246" duration="1697000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit">
       <created>1701693432528</created>
@@ -117,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704036221923</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="mappers directly sends theirs results to reducers without passing throught processer">
+      <created>1704037673199</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704037673199</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
