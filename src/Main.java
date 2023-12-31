@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException, InterruptedException {
 
-        Processer processer = new Processer("/Users/alexisthierry/Documents/Alex/Cours/FI4/S7/Proj731/Map Reduce/src/Files", 10, 2);
+        Processer processer = new Processer("src/Files", 10, 2);
 
         System.out.println(processer.mergedSize);
         processer.mergeFiles();
