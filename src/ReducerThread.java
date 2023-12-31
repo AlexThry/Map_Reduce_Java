@@ -9,7 +9,6 @@ public class ReducerThread extends Thread {
     }
 
     public void run() {
-        System.out.println("Reducing...");
         this.result = reducer.process();
     }
 

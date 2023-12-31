@@ -92,7 +92,6 @@ public class Processer {
         for (MapperThread thread: threads) {
             thread.join();
         }
-        System.out.println("Mapping finished");
     }
 
     public void executeReducer() throws InterruptedException {
