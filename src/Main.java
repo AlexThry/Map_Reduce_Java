@@ -5,18 +5,31 @@ import java.util.HashMap;
 
 public class Main {
 
+    public static void test(int nbMaxMappers, int nbMaxReducer) throws IOException, InterruptedException {
+
+        for (int nbMapper = 1; nbMapper <= nbMaxMappers; nbMapper++) {
+            for (int nbReducer = 1; nbReducer <= nbMaxReducer; nbReducer++) {
+                long debut = System.currentTimeMillis();
+
+                Processer processer = new Processer("src/Files", nbMapper, nbReducer);
+
+                System.out.println(processer.mergedSize);
+                processer.mergeFiles();
+                processer.splitString();
+                processer.executeMappers();
+                processer.shuffle();
+                processer.executeReducer();
+                HashMap<String, Integer> results = processer.getFullHashMap();
+
+                long fin = System.currentTimeMillis();
+
+                long tempsEcoule = fin - debut;
+                System.out.println("Mappers: " + nbMapper + "\nReducers: " + nbReducer + "\nTemps de calcul: " + tempsEcoule + " ms");
+            }
+        }
+    }
+
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException, InterruptedException {
-
-        Processer processer = new Processer("src/Files", 10, 2);
-
-        System.out.println(processer.mergedSize);
-        processer.mergeFiles();
-        processer.splitString();
-        processer.executeMappers();
-        processer.shuffle();
-        processer.executeReducer();
-        HashMap<String, Integer> results = processer.getFullHashMap();
-        System.out.println(results);
-
+        test(10, 4);
     }
 }

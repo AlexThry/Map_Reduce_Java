@@ -10,7 +10,6 @@ public class MapperThread extends Thread {
     }
 
     public void run() {
-        System.out.println("Mapping...");
         try {
             this.result = mapper.process();
         } catch (NoSuchAlgorithmException e) {
