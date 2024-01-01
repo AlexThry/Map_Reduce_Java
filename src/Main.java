@@ -4,7 +4,6 @@ import java.util.HashMap;
 
 
 public class Main {
-
     public static void test(int nbMapperMax, int nbReducerMax) throws IOException, InterruptedException {
         for (int nbMapper = 1; nbMapper <= nbMapperMax; nbMapper++) {
             for (int nbReducer = 1; nbReducer <= nbReducerMax; nbReducer++) {
