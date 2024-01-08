@@ -18,7 +18,7 @@ public class Main {
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
             bufferedWriter.write("TempsEcoule(ms),nTest\n");
-            for (int test = 0; test < 5; test++) {
+            for (int test = 0; test < 10; test++) {
                 long debut = System.currentTimeMillis();
                 Processer processer = new Processer("../Files");
                 processer.mergeFiles();
