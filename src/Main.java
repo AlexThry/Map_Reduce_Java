@@ -44,6 +44,6 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException, InterruptedException {
-        test(10, 4, 1);
+        test(10, 4, 4);
     }
 }
