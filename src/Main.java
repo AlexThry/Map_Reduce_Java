@@ -28,7 +28,7 @@ public class Main {
 
                     long fin = System.currentTimeMillis();
                     long tempsEcoule = (fin - debut);
-                    System.out.println("Test: " + (test + 1) + ", mappers: " + nbMapper + ", reducers: " + nbReducer + ", temps écoulé: " + tempsEcoule);
+                    System.out.println("Test: " + test + ", mappers: " + nbMapper + ", reducers: " + nbReducer + ", temps écoulé: " + tempsEcoule);
                     bufferedWriter.write(nbMapper + "," + nbReducer + "," + tempsEcoule + "," + (test + 1) + "\n");
                 }
             }
@@ -39,6 +39,6 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException, InterruptedException {
-        test(10, 4, 1);
+        test(10, 4, 4);
     }
 }
