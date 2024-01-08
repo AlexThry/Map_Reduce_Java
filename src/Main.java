@@ -7,29 +7,6 @@ import java.util.HashMap;
 
 public class Main {
 
-//    public static void test(int nbMaxMappers, int nbMaxReducer) throws IOException, InterruptedException {
-//
-//        for (int nbMapper = 1; nbMapper <= nbMaxMappers; nbMapper++) {
-//            for (int nbReducer = 1; nbReducer <= nbMaxReducer; nbReducer++) {
-//                long debut = System.currentTimeMillis();
-//
-//                Processer processer = new Processer("src/Files", nbMapper, nbReducer);
-//
-//                System.out.println(processer.mergedSize);
-//                processer.mergeFiles();
-//                processer.splitString();
-//                processer.executeMappers();
-//                processer.shuffle();
-//                processer.executeReducer();
-//                HashMap<String, Integer> results = processer.getFullHashMap();
-//
-//                long fin = System.currentTimeMillis();
-//
-//                long tempsEcoule = fin - debut;
-//                System.out.println("Mappers: " + nbMapper + "\nReducers: " + nbReducer + "\nTemps de calcul: " + tempsEcoule + " ms");
-//            }
-//        }
-//    }
 
     public static void test(int nbMaxMappers, int nbMaxReducer) throws IOException, InterruptedException {
         String csvFileName = "results.csv";
@@ -38,11 +15,11 @@ public class Main {
 
         bufferedWriter.write("NbMapper,NbReducer,TempsEcoule(ms)\n");
 
-        for (int nbMapper = 1; nbMapper <= nbMaxMappers; nbMapper++) {
+        for (int nbMapper = 2; nbMapper <= nbMaxMappers; nbMapper++) {
             for (int nbReducer = 1; nbReducer <= nbMaxReducer; nbReducer++) {
                 long debut = System.currentTimeMillis();
 
-                Processer processer = new Processer("src/Files", nbMapper, nbReducer);
+                Processer processer = new Processer("../Files", nbMapper, nbReducer);
 
                 processer.mergeFiles();
                 processer.splitString();
