@@ -9,7 +9,7 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException, InterruptedException {
-        Processer processer = new Processer("src/Files");
+        Processer processer = new Processer("../Files");
         processer.mergeFiles();
         processer.count();
     }
