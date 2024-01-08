@@ -6,13 +6,19 @@ import java.util.HashMap;
 
 
 public class Main {
+
 //    public static void test(int nbMapperMax, int nbReducerMax) throws IOException, InterruptedException {
+//        String csvFileName = "direct-communication.csv";
+//        FileWriter fileWriter = new FileWriter(csvFileName);
+//        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+//
+//        bufferedWriter.write("NbMapper,NbReducer,TempsEcoule(ms)\n");
+//
 //        for (int nbMapper = 1; nbMapper <= nbMapperMax; nbMapper++) {
 //            for (int nbReducer = 1; nbReducer <= nbReducerMax; nbReducer++) {
 //                long debut = System.currentTimeMillis();
 //                Processer processer = new Processer("src/Files", nbMapper, nbReducer);
 //
-//                System.out.println(processer.mergedSize);
 //                processer.mergeFiles();
 //                processer.splitString();
 //                processer.executeMappers();
@@ -21,41 +27,47 @@ public class Main {
 //
 //                long fin = System.currentTimeMillis();
 //                long tempsEcoule = (fin - debut);
-//                System.out.println("Mappers: " + nbMapper + "\nReducers: " + nbReducer + "\nTemps de calcul : " + tempsEcoule + " ms");
+//                System.out.println("mappers: " + nbMapper + "\nreducers: " + nbReducer + "\ntemps ecoulé: " + tempsEcoule);
+//                bufferedWriter.write(nbMapper + "," + nbReducer + "," + tempsEcoule + "\n");
 //            }
 //        }
+//
+//        bufferedWriter.close();
+//        fileWriter.close();
 //    }
 
-
-    public static void test(int nbMapperMax, int nbReducerMax) throws IOException, InterruptedException {
+    public static void test(int nbMapperMax, int nbReducerMax, int nTest) throws IOException, InterruptedException {
         String csvFileName = "direct-communication.csv";
         FileWriter fileWriter = new FileWriter(csvFileName);
         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
-        bufferedWriter.write("NbMapper,NbReducer,TempsEcoule(ms)\n");
+        bufferedWriter.write("NbMapper,NbReducer,TempsEcoule(ms),nTest\n");
 
-        for (int nbMapper = 1; nbMapper <= nbMapperMax; nbMapper++) {
-            for (int nbReducer = 1; nbReducer <= nbReducerMax; nbReducer++) {
-                long debut = System.currentTimeMillis();
-                Processer processer = new Processer("src/Files", nbMapper, nbReducer);
+        for (int test = 0; test < nTest; test++) {
+            for (int nbMapper = 1; nbMapper <= nbMapperMax; nbMapper++) {
+                for (int nbReducer = 1; nbReducer <= nbReducerMax; nbReducer++) {
+                    long debut = System.currentTimeMillis();
+                    Processer processer = new Processer("src/Files", nbMapper, nbReducer);
 
-                processer.mergeFiles();
-                processer.splitString();
-                processer.executeMappers();
-                processer.executeReducer();
-                HashMap<String, Integer> results = processer.getFullHashMap();
+                    processer.mergeFiles();
+                    processer.splitString();
+                    processer.executeMappers();
+                    processer.executeReducer();
+                    HashMap<String, Integer> results = processer.getFullHashMap();
 
-                long fin = System.currentTimeMillis();
-                long tempsEcoule = (fin - debut);
-                System.out.println("mappers: " + nbMapper + "\nreducers: " + nbReducer + "\ntemps ecoulé: " + tempsEcoule);
-                bufferedWriter.write(nbMapper + "," + nbReducer + "," + tempsEcoule + "\n");
+                    long fin = System.currentTimeMillis();
+                    long tempsEcoule = (fin - debut);
+                    System.out.println("Test: " + (test + 1) + ", mappers: " + nbMapper + ", reducers: " + nbReducer + ", temps écoulé: " + tempsEcoule);
+                    bufferedWriter.write(nbMapper + "," + nbReducer + "," + tempsEcoule + "," + (test + 1) + "\n");
+                }
             }
         }
 
         bufferedWriter.close();
         fileWriter.close();
     }
+
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException, InterruptedException {
-        test(10, 4);
+        test(10, 4, 4);
     }
 }
