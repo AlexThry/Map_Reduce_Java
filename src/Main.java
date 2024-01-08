@@ -9,7 +9,7 @@ public class Main {
 
 
     public static void test(int nbMaxMappers, int nbMaxReducer) throws IOException, InterruptedException {
-        String csvFileName = "results.csv";
+        String csvFileName = "main.csv";
         FileWriter fileWriter = new FileWriter(csvFileName);
         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
