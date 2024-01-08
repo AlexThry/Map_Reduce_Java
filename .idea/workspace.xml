@@ -5,95 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f62e923-ecc0-4d7c-afa2-90b9dfb11943" name="Changes" comment="ajout de test">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map Reduce.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/&#9;The Shadow shall rise across the world,.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/                     R.A.Salvatore.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/                Come gather 'round Hardy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/       _Margaret Weis, Tracy Hickman. Ti.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/    PRELUDES II.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/ CHAPTER ONE OWL POST.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/ WINTER’S HEART .txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/&quot;He left this,&quot; Pellman continued, handi.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/&quot;Shush!&quot; Caramon hissed and went on read.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/================================== copie 2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/================================== copie.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/==================================.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/And his paths shall be many, and who sha.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Bible.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Book 1 of The Wheel of Time:.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/CROWN OF FIRE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Canticle.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Chapter One: Tears from Steel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Children of Dune.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Crucible: The Trial of Cyric the Mad.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/DRAGONS OF SUMMER FLAME.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/DragonLance Chronicles Volume 1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Dune Messiah.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Dune.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Earth's Children #1 -- The Clan of the C.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Earth's Children #2 -- The Valley Of Hor.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Earth's Children #3 -- The Mammoth Hunte.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Fine-Feathers-George-O---Geor-[ebooksread.com].txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Footsteps in the sand, leading me on ....txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Harry Potter and the Deathly Hallows By .txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Harry Potter and the Goblet of Fire by J.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Harry Potter and the Order of the Phoeni.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Homeland.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/In Sylvan Shadows.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/It shall come to pass that what men made.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Jean Auel - Ec4 Plains Of Passage _Copyr.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Kitiara, of all the days these days are .txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Knife of Dreams - Wheel of Time 11..txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Legacy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/NIGHT MASKS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Old-Indian-trails-Walter-McClinto-[ebooksread.com].txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/PRINCE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/PROLOGUE .txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Patriot Games By Tom Clancy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Prelude.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Prologue.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Quaraband.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/R.A.SALVATORE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Red Storm Rising.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Richard Awlinson’s.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Scanned and fully proofed by:.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/THE CHAOS CURSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/THE SHELTERS OF STONE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/THE WHEEL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/THIS IS UNCORRECTED PRE-RELEASE..txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Table of Contents:.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/The DRAGONLANCE* Saga.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/The Fallen Fortress.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/The Hunter's Blades Trilogy 02: The Lone.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/The King's Men.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/The Minister's Plan.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/The Project Gutenberg eBook of Small voi.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/The Project Gutenberg eBook of Social li.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/The Strike at Shayol Ghul .txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/The lions sing and the hills take flight.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/There can be no health in us, nor any go.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/This one's for all who have brought the.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Title: 3001 The final odissey.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/To Lucy Scaramuzzi, the truest of teache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/V1.0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/We've dug our holes and hallowed caves.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/Who would sup with the mighty must climb.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Files/aa.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MapperThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Processer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reducer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReducerThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleHash.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Processer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Processer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

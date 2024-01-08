@@ -45,7 +45,6 @@ public class Processer {
     }
 
     public HashMap<String, Integer> count() {
-        long debut = System.currentTimeMillis();
         HashMap<String, Integer> map = new HashMap<>();
         for (String line : chunk) {
             ArrayList<String> words = new ArrayList<>(List.of(line.split("[ -;,./!?\"\t\n\r()'{}”|“’—^>=%*»$€@#§°_…]+")));
@@ -59,9 +58,6 @@ public class Processer {
             }
         }
 
-        long fin = System.currentTimeMillis();
-
-        System.out.println("temps écoulé: " + (fin - debut));
         return map;
     }
 
