@@ -7,35 +7,6 @@ import java.util.HashMap;
 
 public class Main {
 
-//    public static void test(int nbMapperMax, int nbReducerMax) throws IOException, InterruptedException {
-//        String csvFileName = "direct-communication.csv";
-//        FileWriter fileWriter = new FileWriter(csvFileName);
-//        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-//
-//        bufferedWriter.write("NbMapper,NbReducer,TempsEcoule(ms)\n");
-//
-//        for (int nbMapper = 1; nbMapper <= nbMapperMax; nbMapper++) {
-//            for (int nbReducer = 1; nbReducer <= nbReducerMax; nbReducer++) {
-//                long debut = System.currentTimeMillis();
-//                Processer processer = new Processer("src/Files", nbMapper, nbReducer);
-//
-//                processer.mergeFiles();
-//                processer.splitString();
-//                processer.executeMappers();
-//                processer.executeReducer();
-//                HashMap<String, Integer> results = processer.getFullHashMap();
-//
-//                long fin = System.currentTimeMillis();
-//                long tempsEcoule = (fin - debut);
-//                System.out.println("mappers: " + nbMapper + "\nreducers: " + nbReducer + "\ntemps ecoulé: " + tempsEcoule);
-//                bufferedWriter.write(nbMapper + "," + nbReducer + "," + tempsEcoule + "\n");
-//            }
-//        }
-//
-//        bufferedWriter.close();
-//        fileWriter.close();
-//    }
-
     public static void test(int nbMapperMax, int nbReducerMax, int nTest) throws IOException, InterruptedException {
         String csvFileName = "direct-communication.csv";
         FileWriter fileWriter = new FileWriter(csvFileName);
@@ -44,10 +15,10 @@ public class Main {
         bufferedWriter.write("NbMapper,NbReducer,TempsEcoule(ms),nTest\n");
 
         for (int test = 0; test < nTest; test++) {
-            for (int nbMapper = 1; nbMapper <= nbMapperMax; nbMapper++) {
+            for (int nbMapper = 2; nbMapper <= nbMapperMax; nbMapper++) {
                 for (int nbReducer = 1; nbReducer <= nbReducerMax; nbReducer++) {
                     long debut = System.currentTimeMillis();
-                    Processer processer = new Processer("src/Files", nbMapper, nbReducer);
+                    Processer processer = new Processer("../Files", nbMapper, nbReducer);
 
                     processer.mergeFiles();
                     processer.splitString();
