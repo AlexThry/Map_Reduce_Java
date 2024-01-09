@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f62e923-ecc0-4d7c-afa2-90b9dfb11943" name="Changes" comment="ajout de test">
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="1f62e923-ecc0-4d7c-afa2-90b9dfb11943" name="Changes" comment="modifying hash function">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701976230198</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="modifying hash function">
+      <created>1704786668676</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704786668676</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +153,7 @@
     <MESSAGE value="Mappers" />
     <MESSAGE value="Ajout commentaires" />
     <MESSAGE value="Working multithread MapReduce" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working multithread MapReduce" />
+    <MESSAGE value="modifying hash function" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifying hash function" />
   </component>
 </project>

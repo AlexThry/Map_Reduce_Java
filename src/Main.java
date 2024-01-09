@@ -20,14 +20,14 @@ public class Main {
                 for (int nbReducer = 1; nbReducer <= nbMaxReducer; nbReducer++) {
                     long debut = System.currentTimeMillis();
 
-                    Processer processer = new Processer("../Files", nbMapper, nbReducer);
+                    Processor processor = new Processor("../Files", nbMapper, nbReducer);
 
-                    processer.mergeFiles();
-                    processer.splitString();
-                    processer.executeMappers();
-                    processer.shuffle();
-                    processer.executeReducer();
-                    HashMap<String, Integer> results = processer.getFullHashMap();
+                    processor.mergeFiles();
+                    processor.splitString();
+                    processor.executeMappers();
+                    processor.shuffle();
+                    processor.executeReducer();
+                    HashMap<String, Integer> results = processor.getFullHashMap();
 
                     long fin = System.currentTimeMillis();
 
