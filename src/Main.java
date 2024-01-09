@@ -18,13 +18,13 @@ public class Main {
             for (int nbMapper = 2; nbMapper <= nbMapperMax; nbMapper++) {
                 for (int nbReducer = 1; nbReducer <= nbReducerMax; nbReducer++) {
                     long debut = System.currentTimeMillis();
-                    Processer processer = new Processer("../Files", nbMapper, nbReducer);
+                    Processor processor = new Processor("../Files", nbMapper, nbReducer);
 
-                    processer.mergeFiles();
-                    processer.splitString();
-                    processer.executeMappers();
-                    processer.executeReducer();
-                    HashMap<String, Integer> results = processer.getFullHashMap();
+                    processor.mergeFiles();
+                    processor.splitString();
+                    processor.executeMappers();
+                    processor.executeReducer();
+                    HashMap<String, Integer> results = processor.getFullHashMap();
 
                     long fin = System.currentTimeMillis();
                     long tempsEcoule = (fin - debut);
@@ -39,6 +39,19 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException, InterruptedException {
-        test(10, 4, 4);
+//        test(10, 4, 4);
+
+        long debut = System.currentTimeMillis();
+        Processor processor = new Processor("../Files", 10, 3);
+
+        processor.mergeFiles();
+        processor.splitString();
+        processor.executeMappers();
+        processor.executeReducer();
+        HashMap<String, Integer> results = processor.getFullHashMap();
+
+        long fin = System.currentTimeMillis();
+        System.out.println(results);
+        System.out.println("Temps de traitement: " + (fin-debut));
     }
 }

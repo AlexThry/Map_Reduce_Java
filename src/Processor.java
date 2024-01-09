@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Processer {
+public class Processor {
     ArrayList<String> files;
     ArrayList<String> mergedText = new ArrayList<>();
     ArrayList<ArrayList<String>> chunks = new ArrayList<>();
@@ -11,7 +11,7 @@ public class Processer {
     ArrayList<Reducer> reducers = new ArrayList<>();
     HashMap<String, Integer> fullHashMap = new HashMap<>();
 
-    public Processer(String filesPath, int nbMappers, int nbReducers) {
+    public Processor(String filesPath, int nbMappers, int nbReducers) {
         for (int i = 0; i < nbReducers; i++) {
             this.reducers.add(new Reducer());
         }
@@ -32,8 +32,8 @@ public class Processer {
                 for (File file : files) {
                     if (file.isFile()) {
                         String fileName = file.getName();
-                        String[] splitted = fileName.split("[.]+");
-                        if (splitted[splitted.length - 1].equals("txt")) {
+                        String[] split = fileName.split("[.]+");
+                        if (split[split.length - 1].equals("txt")) {
                             filesArray.add(path + "/" + fileName);
                         }
                     }
