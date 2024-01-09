@@ -22,6 +22,7 @@ public class SimpleHash {
             hash ^= (hash >> 4) | (hash << 4);
         }
 
-        return Math.abs((byte) (hash & 0xFF));
+        int result = Math.abs((byte) (hash & 0xFF));
+        return result % 128;
     }
 }
