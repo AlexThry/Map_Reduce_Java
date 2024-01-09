@@ -22,6 +22,7 @@ public class SimpleHash {
             hash ^= (hash >> 4) | (hash << 4);
         }
 
-        return Math.abs((byte) (hash & 0xFF));
+        int result = Math.abs((byte) (hash & 0xFF)); // Obtient la valeur absolue du modulo 256
+        return result % 128;
     }
 }
